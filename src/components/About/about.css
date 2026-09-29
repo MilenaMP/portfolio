@@ -1,0 +1,223 @@
+/* =========================
+   ABOUT
+========================= */
+
+.about {
+    padding: 120px 8%;
+}
+
+.about-header {
+    margin-bottom: 60px;
+}
+
+.section-subtitle {
+    color: #f59e0b;
+    font-size: 18px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.section-title {
+    margin: 0;
+
+    color: #f8fafc;
+
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+
+    line-height: 1.1;
+}
+
+.section-title span {
+    color: #f59e0b;
+}
+
+
+/* =========================
+   CONTEÚDO
+========================= */
+
+.about-content {
+    display: grid;
+
+    grid-template-columns:
+        minmax(0, 0.95fr)
+        minmax(0, 1fr);
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+
+/* =========================
+   TEXTO
+========================= */
+
+.about-text {
+    max-width: 650px;
+
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+}
+
+.about-text p {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 17px;
+
+    line-height: 1.8;
+}
+
+.about-text strong {
+    color: #cbd5e1;
+
+    font-weight: 600;
+}
+
+
+/* =========================
+   CARDS
+========================= */
+
+.about-cards {
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 18px;
+}
+
+.about-card {
+    min-height: 125px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background: rgba(255, 255, 255, 0.045);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    backdrop-filter: blur(10px);
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+    transform: translateY(-6px);
+
+    background: rgba(255, 255, 255, 0.06);
+
+    border-color: rgba(245, 158, 11, 0.45);
+
+    box-shadow:
+        0 15px 35px rgba(0, 0, 0, 0.25);
+}
+
+.about-card h3 {
+    margin: 0 0 8px;
+
+    color: #f59e0b;
+
+    font-size: 1.5rem;
+
+    line-height: 1.2;
+}
+
+.about-card p {
+    margin: 0;
+
+    color: #cbd5e1;
+
+    font-size: 0.9rem;
+}
+
+
+@media (max-width: 900px) {
+
+    .about {
+        padding: 90px 40px;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+    .about-text {
+        max-width: 700px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .about {
+        padding: 70px 20px;
+    }
+
+    .about-header {
+        margin-bottom: 40px;
+    }
+
+    .section-subtitle {
+        font-size: 16px;
+    }
+
+    .section-title {
+        font-size: 2.4rem;
+    }
+
+    .about-text {
+        gap: 18px;
+    }
+
+    .about-text p {
+        font-size: 16px;
+
+        line-height: 1.75;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .about-card {
+        min-height: 110px;
+    }
+
+}
+
+@media(max-width:1000px) {
+
+    .about {
+        padding: 80px 30px;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 38px;
+    }
+}

@@ -1,0 +1,431 @@
+/* =========================
+   FORMATION
+========================= */
+
+.formation {
+    padding: 120px 8%;
+}
+
+.formation-header {
+    max-width: 700px;
+    margin-bottom: 60px;
+}
+
+.formation-header .section-title span {
+    color: #f59e0b;
+}
+
+.formation-description {
+    margin-top: 15px;
+    max-width: 650px;
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   FORMAÇÃO ACADÊMICA
+========================= */
+
+.academic-card {
+    max-width: 900px;
+
+    margin-bottom: 70px;
+    padding: 30px;
+
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    background: rgba(255, 255, 255, 0.035);
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 24px;
+
+    backdrop-filter: blur(12px);
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.academic-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(245, 158, 11, 0.35);
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.25);
+}
+
+.formation-icon {
+    width: 70px;
+    height: 70px;
+
+    flex-shrink: 0;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 18px;
+
+    background: rgba(245, 158, 11, 0.1);
+
+    border: 1px solid rgba(245, 158, 11, 0.15);
+
+    font-size: 32px;
+}
+
+.academic-content {
+    display: flex;
+    flex-direction: column;
+}
+
+.formation-label {
+    margin-bottom: 6px;
+
+    color: #f59e0b;
+
+    font-size: 0.75rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.academic-content h3 {
+    margin: 0 0 6px;
+
+    color: #f8fafc;
+
+    font-size: 1.7rem;
+}
+
+.institution {
+    margin: 0 0 10px;
+
+    color: #cbd5e1;
+
+    font-size: 1rem;
+}
+
+.formation-status {
+    color: #94a3b8;
+
+    font-size: 0.85rem;
+}
+
+
+/* =========================
+   SEÇÕES INTERNAS
+========================= */
+
+.formation-section {
+    margin-bottom: 70px;
+}
+
+.formation-section-title {
+    display: flex;
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 30px;
+}
+
+.formation-section-icon {
+    font-size: 30px;
+}
+
+.formation-section-title h3 {
+    margin: 0 0 5px;
+
+    color: #f8fafc;
+
+    font-size: 1.5rem;
+}
+
+.formation-section-title p {
+    margin: 0;
+
+    color: #64748b;
+
+    font-size: 0.95rem;
+}
+
+
+/* =========================
+   GRID DE CURSOS
+========================= */
+
+.formation-grid {
+    display: grid;
+
+    grid-template-columns:
+        repeat(3, minmax(0, 1fr));
+
+    gap: 20px;
+}
+
+
+/* =========================
+   CARD DE CURSO
+========================= */
+
+.formation-card {
+    min-height: 190px;
+
+    padding: 25px;
+
+    display: flex;
+    flex-direction: column;
+
+    background: #111827;
+
+    border: 1px solid rgba(255, 255, 255, 0.08);
+
+    border-radius: 20px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.formation-card:hover {
+    transform: translateY(-6px);
+
+    border-color: rgba(245, 158, 11, 0.35);
+
+    box-shadow:
+        0 20px 35px rgba(0, 0, 0, 0.25);
+}
+
+.formation-card-top {
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 10px;
+
+    margin-bottom: 20px;
+}
+
+.course-type {
+    color: #f59e0b;
+
+    font-size: 0.7rem;
+    font-weight: 600;
+
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+}
+
+.course-status {
+    padding: 5px 9px;
+
+    border-radius: 20px;
+
+    font-size: 0.68rem;
+    font-weight: 600;
+}
+
+.course-status.completed {
+    color: #86efac;
+
+    background: rgba(34, 197, 94, 0.1);
+
+    border: 1px solid rgba(34, 197, 94, 0.15);
+}
+
+.course-status.in-progress {
+    color: #fbbf24;
+
+    background: rgba(245, 158, 11, 0.1);
+
+    border: 1px solid rgba(245, 158, 11, 0.15);
+}
+
+.formation-card h4 {
+    margin: 0 0 12px;
+
+    color: #f8fafc;
+
+    font-size: 1.15rem;
+
+    line-height: 1.4;
+}
+
+.course-institution {
+    margin: 0;
+
+    color: #94a3b8;
+
+    font-size: 0.9rem;
+
+    line-height: 1.5;
+}
+
+.course-year {
+    margin-top: auto;
+    padding-top: 20px;
+
+    color: #64748b;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   CARDS DESTACADOS
+========================= */
+
+.featured-formation-card {
+    padding: 30px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(245, 158, 11, 0.07),
+            rgba(255, 255, 255, 0.025)
+        );
+
+    border: 1px solid rgba(245, 158, 11, 0.15);
+
+    border-radius: 24px;
+
+    transition:
+        transform 0.3s ease,
+        border-color 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.featured-formation-card:hover {
+    transform: translateY(-5px);
+
+    border-color: rgba(245, 158, 11, 0.35);
+
+    box-shadow:
+        0 20px 45px rgba(0, 0, 0, 0.25);
+}
+
+.featured-formation-header {
+    display: flex;
+
+    align-items: flex-start;
+    justify-content: space-between;
+
+    gap: 30px;
+
+    margin-bottom: 20px;
+}
+
+.featured-formation-header h4 {
+    margin: 8px 0;
+
+    color: #f8fafc;
+
+    font-size: 1.5rem;
+
+    line-height: 1.4;
+}
+
+.featured-formation-header .course-institution {
+    margin: 0;
+}
+
+.formation-card-description {
+    max-width: 900px;
+
+    margin-bottom: 25px;
+
+    color: #94a3b8;
+
+    line-height: 1.7;
+}
+
+
+/* =========================
+   TAGS
+========================= */
+
+.formation-tags {
+    display: flex;
+
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.formation-tags span {
+    padding: 8px 13px;
+
+    color: #f59e0b;
+
+    background: rgba(245, 158, 11, 0.08);
+
+    border: 1px solid rgba(245, 158, 11, 0.12);
+
+    border-radius: 20px;
+
+    font-size: 0.8rem;
+}
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+@media (max-width: 900px) {
+
+    .formation {
+        padding: 90px 40px;
+    }
+
+    .formation-grid {
+        grid-template-columns:
+            repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+
+@media (max-width: 650px) {
+
+    .formation {
+        padding: 70px 20px;
+    }
+
+    .academic-card {
+        align-items: flex-start;
+
+        padding: 22px;
+
+        flex-direction: column;
+    }
+
+    .formation-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .featured-formation-header {
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    .featured-formation-card {
+        padding: 22px;
+    }
+
+    .featured-formation-header h4 {
+        font-size: 1.25rem;
+    }
+
+}
