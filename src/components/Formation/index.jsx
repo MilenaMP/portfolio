@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import "./Formation.css";
+import "./formation.css";
 
 export default function Formation() {
     const developmentCourses = [
